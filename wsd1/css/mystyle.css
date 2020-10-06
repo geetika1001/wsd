@@ -93,19 +93,21 @@ ul li a .fa{
 .content
 {
 	position: absolute;
-	top: 50%;
+	top: 40%;
 	left: 30%;
 }
 .content h1{
 	float: center;
      color: #00008B;
      font-size: 60px;
+     font-weight: bolder;
 }
 .button{
 	position: absolute;
-	top: 60%;
-	left: 40%;
+	top: 50%;
+	left: 35%;
 	margin-top: 2%;
+	font-weight: bold;
 }
 .btn{
 	border: 2px solid #00008B;

@@ -1,0 +1,120 @@
+*{
+	margin:0;
+	padding:0;
+	font-family:Century Gothic;
+}
+body{
+	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../background.jpg);
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	transition: 3s;
+
+	animation-name: animate;
+	animation-direction: alternate-reverse;
+    animation-duration: 20s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-play-state: running; 
+    animation-timing-function:ease-in-out; 
+}
+@keyframes animate{
+	
+	0%{
+		background-image: url(../background1.jpg);
+	}
+    20%{
+		background-image: url(../background.jpg);
+	}
+    40%{
+		background-image: url(../background2.jpg);
+	}
+	60%{
+		background-image: url(../background3.jpg);
+	}
+}
+ul
+{
+	float: right;
+	list-style-type: none;
+	margin-top: 2.5px;
+	margin-right: 2px;
+}
+ ul li
+{
+	display: inline-block;
+}
+ ul li a
+{
+	display: block;
+	text-decoration: none;
+	color: #00008B;
+	padding: 3px;
+	border: 1px solid transperent;
+	transition: 0.6s ease;
+}
+ ul li a:hover
+{
+	background-color: #fff;
+	color: #00008B;
+}
+ ul ul {
+	position: absolute;
+	top: 60px;
+	display: none;
+}
+ ul li :hover > ul{
+	display: block;
+}
+ul ul li{
+	width: 150px;
+	float:none;
+	display: list-item;
+	position: relative;
+}
+ul li a .fa{
+	margin-right: 8px;
+}
+.active{
+     background-color: #fff;
+     color: #00008B;
+}
+.logo
+{
+	float: left;
+	padding-left: 2px;
+
+}
+.main{
+	max-width: 100%;
+	margin: auto;
+}
+.content
+{
+	position: absolute;
+	top: 50%;
+	left: 30%;
+}
+.content h1{
+	float: center;
+     color: #00008B;
+     font-size: 60px;
+}
+.button{
+	position: absolute;
+	top: 60%;
+	left: 40%;
+	margin-top: 2%;
+}
+.btn{
+	border: 2px solid #00008B;
+	padding: 10px 30px;
+	color: #00008B;
+	text-decoration: none;
+	transition: 0.6s ease;
+}
+.btn:hover{
+	background: #fff;
+	color: #00008B;
+}
